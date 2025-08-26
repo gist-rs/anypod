@@ -105,7 +105,12 @@ async fn load_components(format_name: &str) -> Result<PromptComponents> {
     let core_path = base_path.join("core/noob_learning.json");
     let ying_path = base_path.join("personas/ying.json");
     let katopz_path = base_path.join("personas/katopz.json");
-    let intro_path = base_path.join("segments/intro.json");
+    let intro_filename = if format_name == "news_summary" {
+        "segments/intro_news.json"
+    } else {
+        "segments/intro.json"
+    };
+    let intro_path = base_path.join(intro_filename);
     let outro_path = base_path.join("segments/outro.json");
     let rules_path = base_path.join("rules/general.json");
     let format_path = base_path
@@ -210,7 +215,7 @@ async fn main() -> Result<()> {
     println!("-> All components loaded successfully.");
 
     // 4. Assemble the final prompt string.
-    let final_prompt = assemble_prompt(&components, &source_content);
+    let final_prompt = assemble_prompt(&components);
     println!("-> Final prompt assembled successfully.");
 
     // 5. Generate a descriptive filename and save the final prompt.
@@ -236,8 +241,8 @@ async fn main() -> Result<()> {
     Ok(())
 }
 
-/// Assembles the final prompt string from all loaded components and the source content.
-fn assemble_prompt(components: &PromptComponents, source_content: &str) -> String {
+/// Assembles the final prompt string from all loaded components.
+fn assemble_prompt(components: &PromptComponents) -> String {
     let mut prompt = String::new();
 
     // Core Identity
@@ -256,7 +261,10 @@ fn assemble_prompt(components: &PromptComponents, source_content: &str) -> Strin
         prompt.push_str(&format!("## {} ({})\n", p.name, p.gender));
         prompt.push_str(&format!("- Role: {}\n", p.role));
         prompt.push_str(&format!("- Persona: {}\n", p.persona));
-        prompt.push_str(&format!("- Common Phrases: {:?}\n", p.common_phrases));
+        prompt.push_str(&format!(
+            "- Common Phrases: {}\n",
+            p.common_phrases.join(", ")
+        ));
     }
     prompt.push('\n');
 
@@ -295,11 +303,6 @@ fn assemble_prompt(components: &PromptComponents, source_content: &str) -> Strin
         prompt.push_str(&format!("- {line}\n"));
     }
     prompt.push('\n');
-
-    // Source Content
-    prompt.push_str("---\n");
-    prompt.push_str("# SOURCE CONTENT\n");
-    prompt.push_str(source_content);
 
     prompt
 }
