@@ -1,0 +1,26 @@
+{
+  "format_name": "AI Paper Deep Dive",
+  "goal": "To break down a complex AI research paper and make its key findings accessible to a non-expert audience.",
+  "blueprint": [
+    {
+      "step": 1,
+      "name": "Why This Paper? (1 min)",
+      "technique": "Start by explaining why this specific paper is important or exciting in a relatable way. What problem does it solve?"
+    },
+    {
+      "step": 2,
+      "name": "The Core Idea (2-3 mins)",
+      "technique": "Use a powerful analogy to explain the main hypothesis or innovation of the paper. Avoid jargon as much as possible."
+    },
+    {
+      "step": 3,
+      "name": "How They Did It (2-3 mins)",
+      "technique": "Briefly describe the experiment or method in simple terms. Focus on the 'what' and 'why', not the deep technical 'how'."
+    },
+    {
+      "step": 4,
+      "name": "What It Means for Us (1 min)",
+      "technique": "Connect the paper's findings to the real world. What future technology could this lead to? Why should the average person be excited?"
+    }
+  ]
+}

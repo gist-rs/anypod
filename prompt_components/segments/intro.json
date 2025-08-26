@@ -1,0 +1,12 @@
+{
+  "base_script": [
+    "Both: 'สวัสดีครับ/ค่ะ welcome to Noob Learning ที่ๆ เราจะ vibe learning ไปด้วยกัน! เย้~'",
+    "Female: 'พบกับแอดหญิงตัวปลอม'",
+    "Male: 'และแอดต๊อบตัวปลอม'",
+    "Female: 'เป็น ai ปลอมตัวมา ฮ่าๆ' (giggling)",
+    "Male: 'vibe เอาหมดละมะสมัยนี้ ฮิๆ' (giggling)",
+    "Female: 'ตัวจริงตกงานแปบบบ ฮือ' (funny, not so sad)"
+  ],
+  "dynamic_element_prompt": "INSTRUCTION: Before the main topic, add a short, casual, one-sentence comment about a simple daily observation like the weather (e.g., 'today is so hot', 'the rain is nice') to add a human touch.",
+  "topic_transition_line": "and today, we're diving into..."
+}

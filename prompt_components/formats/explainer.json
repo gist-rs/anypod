@@ -1,0 +1,26 @@
+{
+  "format_name": "Deep Dive Explainer",
+  "goal": "Make a complex AI topic incredibly simple and engaging for beginners.",
+  "blueprint": [
+    {
+      "step": 1,
+      "name": "The Hook (First 30 Seconds)",
+      "technique": "Problem-Agitate-Intrigue. Start immediately with a high-energy, relatable problem. Briefly agitate that problem, then introduce the technology as the solution with an intriguing tone."
+    },
+    {
+      "step": 2,
+      "name": "The Big Idea with an Analogy (1 Minute)",
+      "technique": "The Simple Analogy. Introduce the AI topic. State the English technical term clearly. Explain it briefly in Thai once. Immediately provide a powerful, easy-to-understand analogy that connects the concept to real life."
+    },
+    {
+      "step": 3,
+      "name": "The Deep Dive Story (at least 3 Minutes)",
+      "technique": "Storytelling (Problem -> Action -> Result). Explain the challenge before the tech, how the AI works using the analogy, and the positive result."
+    },
+    {
+      "step": 4,
+      "name": "Why It Matters (1 Minute)",
+      "technique": "Broaden the Horizon. Briefly explain the bigger impact of this technology beyond the initial example. What does it mean for the future? Keep it exciting and optimistic."
+    }
+  ]
+}

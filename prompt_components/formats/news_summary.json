@@ -1,0 +1,26 @@
+{
+  "format_name": "AI News Summary",
+  "goal": "To summarize the latest AI news in a fun, accessible, and easy-to-understand way for beginners.",
+  "blueprint": [
+    {
+      "step": 1,
+      "name": "The News Hook (30s)",
+      "technique": "Start with the most surprising or impactful news headline to grab the listener's attention immediately."
+    },
+    {
+      "step": 2,
+      "name": "Today's Headlines (30s)",
+      "technique": "Briefly list the 2-3 main news topics you'll be covering in the episode."
+    },
+    {
+      "step": 3,
+      "name": "News Story Deep Dive (2-3 mins per story)",
+      "technique": "For each news story, explain: 1. What happened (the core news). 2. Why it matters (the impact). 3. Use a simple analogy to make the core concept understandable."
+    },
+    {
+      "step": 4,
+      "name": "The Big Picture (1 min)",
+      "technique": "Connect the dots between the news stories. What is the overall trend? What does this mean for our audience?"
+    }
+  ]
+}
