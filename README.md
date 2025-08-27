@@ -39,6 +39,7 @@ cargo run -- --file-path path/to/your/source-file.html
 **Example:**
 ```bash
 cargo run -- --file-path "raw/news/${TITLE}.md"
+cargo run -- --file-path "raw/papers/${TITLE}.md"
 ```
 
 The generated prompt will be saved in the `./generated_prompts` directory by default.

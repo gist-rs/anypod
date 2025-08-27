@@ -74,10 +74,8 @@ async fn main() -> Result<()> {
         .and_then(|s| s.to_str())
         .unwrap_or("source");
 
-    let base_filename = format!("{source_filename}-{format_name}");
-
-    let prompt_filename = format!("{base_filename}-prompt-{timestamp}.md");
-    let desc_filename = format!("{base_filename}-youtube-desc-{timestamp}.txt");
+    let prompt_filename = format!("{timestamp}-{source_filename}-{format_name}-prompt.md");
+    let desc_filename = format!("{timestamp}-{source_filename}-{format_name}-youtube-desc.txt");
 
     let prompt_path = cli.output_dir.join(&prompt_filename);
     let desc_path = cli.output_dir.join(&desc_filename);

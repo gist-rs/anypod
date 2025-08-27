@@ -1,0 +1,13 @@
+{
+  "base_script": [
+    "Both: 'Noob Learning สวัสดีครับ/ค่ะ พบกันเช่นเคย ที่ๆ เราจะ vibe learning ไปด้วยกัน! เย้~'",
+    "Female: 'พบกับแอดหญิงตัวปลอม'",
+    "Male: 'และแอดต๊อบตัวปลอม'",
+    "Female: 'เป็น ai ปลอมตัวมา ฮ่าๆ' (giggling)",
+    "Male: 'วันนี้มี paper มาใหม่'",
+    "Female: 'มาใหม่ตลอดๆ'",
+    "Male: 'ไปฟังกันเลยยยย'"
+  ],
+  "dynamic_element_prompt": "INSTRUCTION: Before the main topic, add a short, casual, one-sentence comment about a simple daily observation. Use the provided 'TODAY' date to make a plausible assumption about the current season or weather to add a human touch.",
+  "topic_transition_line": "Today, we're looking at an exciting paper that recently caught our attention."
+}

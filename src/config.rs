@@ -95,10 +95,10 @@ pub async fn load_components(format_name: &str) -> Result<PromptComponents> {
     let core_path = base_path.join("core/noob_learning.json");
     let ying_path = base_path.join("personas/ying.json");
     let katopz_path = base_path.join("personas/katopz.json");
-    let intro_filename = if format_name == "news_summary" {
-        "segments/intro_news.json"
-    } else {
-        "segments/intro.json"
+    let intro_filename = match format_name {
+        "news_summary" => "segments/intro_news.json",
+        "paper_deep_dive" => "segments/intro_paper.json",
+        _ => "segments/intro.json",
     };
     let intro_path = base_path.join(intro_filename);
     let outro_path = base_path.join("segments/outro.json");

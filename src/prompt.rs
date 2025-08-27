@@ -1,8 +1,13 @@
 use crate::config::PromptComponents;
+use chrono::Local;
 
 /// Assembles the final prompt string from all loaded components.
 pub fn assemble_prompt(components: &PromptComponents) -> String {
     let mut prompt = String::new();
+
+    // Today's Date
+    prompt.push_str("# TODAY\n");
+    prompt.push_str(&format!("{}\n\n", Local::now().to_rfc2822()));
 
     // Core Identity
     prompt.push_str("# CORE IDENTITY\n");
