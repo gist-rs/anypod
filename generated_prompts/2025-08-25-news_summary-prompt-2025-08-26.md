@@ -25,10 +25,12 @@ Goal: To summarize the latest AI news in a fun, accessible, and easy-to-understa
 ## Intro
 - INSTRUCTION: Start with a high-energy, one-sentence comment about how fast the world of AI is moving this week (e.g., 'What a week for AI!', 'So much has happened in just a few days!').
 - Both: 'สวัสดีครับ/ค่ะ welcome to Noob Learning ที่ๆ เราจะ vibe learning ไปด้วยกัน! เย้~'
-- Female: 'วันนี้มีข่าว AI ใหม่ๆ มาอัปเดตกันอีกแล้ววว'
-- Male: 'ขาว เอ้ย! ข่าวเร็วกว่าใคร ต้อง Noob Learning!'
-- Female: 'อย่าไปบอกใคร เราเน้นไว ไม่เน้นคุณภาพ ฮ่าๆ'
-- Male: 'แถมเจนเอา เพราะเรารีบบบบไม่ไหว ฮิๆ'
+- Female: 'พบกับแอดหญิงตัวปลอม'
+- Male: 'และแอดต๊อบตัวปลอม'
+- Female: 'เราเป็น ai ปลอมตัวมา ฮ่าๆ' (giggling)
+- Male: 'วันนี้มีข่าว AI ใหม่ๆ มาอัปเดตกันอีกแล้ววว'
+- Female: 'ไปกันฟังเล้ยยย'
+- Male: 'ปายยย'
 - and here are the top stories we're tracking today...
 
 ## Main Content

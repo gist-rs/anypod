@@ -22,10 +22,16 @@ struct LlmResponse {
 // --- Data Structures for JSON Components ---
 
 #[derive(Debug, Deserialize)]
+struct SocialLinks {
+    facebook: String,
+}
+
+#[derive(Debug, Deserialize)]
 struct CoreConfig {
     podcast_name: String,
     slogan: String,
     target_audience: String,
+    social_links: SocialLinks,
 }
 
 #[derive(Debug, Deserialize)]
@@ -188,26 +194,19 @@ async fn main() -> Result<()> {
         .await
         .with_context(|| format!("Failed to read source file: {}", cli.file_path.display()))?;
 
-    // 2. Determine the podcast format via LLM call
-    println!("\n-> Asking LLM to choose the best format...");
-    let format_selection_prompt = format!(
-        "Analyze the following content and determine the best podcast format from this list: 'news_summary', 'explainer', 'paper_deep_dive'. Respond with only the chosen format name and nothing else.\n\n---\n\n{}",
-        &source_content[..source_content.len().min(4000)] // Limit context to avoid large payloads
+    // 2. Concurrently call LLM for format selection and YouTube description.
+    println!("\n-> Asking LLM to choose format and generate YouTube description...");
+    let client = Client::new();
+    let (format_name_result, youtube_desc_result) = tokio::join!(
+        determine_format(&client, &cli.llm_url, &source_content),
+        generate_youtube_description(&client, &cli.llm_url, &source_content)
     );
 
-    let client = Client::new();
-    let response: LlmResponse = client
-        .post(&cli.llm_url)
-        .json(&json!({ "prompt": format_selection_prompt }))
-        .send()
-        .await
-        .with_context(|| format!("Failed to send request to LLM at {}", cli.llm_url))?
-        .json()
-        .await
-        .with_context(|| "Failed to parse JSON response from LLM")?;
+    let format_name = format_name_result?;
+    let mut youtube_desc = youtube_desc_result?;
 
-    let format_name = response.result.text.trim().to_string();
     println!("-> LLM selected format: {format_name}");
+    println!("-> YouTube description generated.");
 
     // 3. Load all necessary JSON components
     println!("-> Loading all prompt components...");
@@ -218,7 +217,13 @@ async fn main() -> Result<()> {
     let final_prompt = assemble_prompt(&components);
     println!("-> Final prompt assembled successfully.");
 
-    // 5. Generate a descriptive filename and save the final prompt.
+    // 5. Append social link to the description.
+    if !components.core.social_links.facebook.is_empty() {
+        youtube_desc.push_str("\n\n---\n\n");
+        youtube_desc.push_str(&components.core.social_links.facebook);
+    }
+
+    // 6. Generate descriptive filenames and save both files.
     let timestamp = Local::now().format("%Y-%m-%d");
     let source_filename = cli
         .file_path
@@ -226,19 +231,78 @@ async fn main() -> Result<()> {
         .and_then(|s| s.to_str())
         .unwrap_or("source");
 
-    let output_filename = format!("{source_filename}-{format_name}-prompt-{timestamp}.md");
-    let output_path = cli.output_dir.join(&output_filename);
+    let base_filename = format!("{source_filename}-{format_name}");
 
-    fs::write(&output_path, &final_prompt)
+    let prompt_filename = format!("{base_filename}-prompt-{timestamp}.md");
+    let desc_filename = format!("{base_filename}-youtube-desc-{timestamp}.txt");
+
+    let prompt_path = cli.output_dir.join(&prompt_filename);
+    let desc_path = cli.output_dir.join(&desc_filename);
+
+    fs::write(&prompt_path, &final_prompt)
         .await
-        .with_context(|| format!("Failed to write final prompt to {}", output_path.display()))?;
+        .with_context(|| format!("Failed to write final prompt to {}", prompt_path.display()))?;
+
+    fs::write(&desc_path, &youtube_desc)
+        .await
+        .with_context(|| {
+            format!(
+                "Failed to write YouTube description to {}",
+                desc_path.display()
+            )
+        })?;
 
     println!(
-        "\n✅ Success! Prompt file saved to: {}",
-        output_path.display()
+        "\n✅ Success! Files saved:\n- Prompt: {}\n- Description: {}",
+        prompt_path.display(),
+        desc_path.display()
     );
 
     Ok(())
+}
+
+/// Calls the LLM to determine the podcast format.
+async fn determine_format(client: &Client, llm_url: &str, content: &str) -> Result<String> {
+    let prompt = format!(
+        "Analyze the following content and determine the best podcast format from this list: 'news_summary', 'explainer', 'paper_deep_dive'. Respond with only the chosen format name and nothing else.\n\n---\n\n{}",
+        &content[..content.len().min(4000)]
+    );
+
+    let response: LlmResponse = client
+        .post(llm_url)
+        .json(&json!({ "prompt": prompt }))
+        .send()
+        .await
+        .with_context(|| format!("Failed to send format selection request to LLM at {llm_url}"))?
+        .json()
+        .await
+        .with_context(|| "Failed to parse format selection response from LLM".to_string())?;
+
+    Ok(response.result.text.trim().to_string())
+}
+
+/// Calls the LLM to generate a YouTube description.
+async fn generate_youtube_description(
+    client: &Client,
+    llm_url: &str,
+    content: &str,
+) -> Result<String> {
+    let prompt = format!(
+        "Based on the following content, generate a concise and engaging YouTube video description. The description should:\n1. Start with a one-sentence hook that grabs attention.\n2. Summarize the key topics discussed in 2-3 bullet points, with each bullet point starting with a relevant emoji (e.g., 🚀, ✨, 🤖).\n3. Include a friendly closing sentence.\n4. Do NOT include hashtags or links.\n\n---\n\n{}",
+        &content[..content.len().min(4000)]
+    );
+
+    let response: LlmResponse = client
+        .post(llm_url)
+        .json(&json!({ "prompt": prompt }))
+        .send()
+        .await
+        .with_context(|| format!("Failed to send YouTube description request to LLM at {llm_url}"))?
+        .json()
+        .await
+        .with_context(|| "Failed to parse YouTube description response from LLM".to_string())?;
+
+    Ok(response.result.text.trim().to_string())
 }
 
 /// Assembles the final prompt string from all loaded components.

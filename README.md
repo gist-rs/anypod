@@ -3,9 +3,14 @@
 1. Paper to podcast. // weekly
 2. News to podcast. // daily
 
+## Title
+```bash
+export TITLE=2025-08-25
+```
+
 ## Convert
 ```bash
-ffmpeg -loop 1 -i cover.png -i "A Survey on Diffusion Language Models.m4a" -c:v libx264 -tune stillimage -c:a copy -pix_fmt yuv420p -shortest output.mp4
+ffmpeg -loop 1 -i assets/${TITLE}.png -i "bin/${TITLE}.m4a" -c:v libx264 -tune stillimage -c:a copy -pix_fmt yuv420p -shortest bin/${TITLE}.mp4
 ```
 
 ---
@@ -33,7 +38,7 @@ cargo run -- --file-path path/to/your/source-file.html
 
 **Example:**
 ```bash
-cargo run -- --file-path "raw/news/Gmail - [AINews] not much happened today.html"
+cargo run -- --file-path "raw/news/${TITLE}.md"
 ```
 
 The generated prompt will be saved in the `./generated_prompts` directory by default.
@@ -43,7 +48,7 @@ The generated prompt will be saved in the `./generated_prompts` directory by def
 You can specify a different directory to save the prompt files using the `--output-dir` flag.
 
 ```bash
-cargo run -- --file-path "raw/news/Gmail - [AINews] not much happened today.html" --output-dir ./my_prompts
+cargo run -- --file-path "raw/news/${TITLE}" --output-dir ./my_prompts
 ```
 
 #### Specifying the LLM URL
@@ -51,7 +56,7 @@ cargo run -- --file-path "raw/news/Gmail - [AINews] not much happened today.html
 If your local LLM is running on a different address, use the `--llm-url` flag.
 
 ```bash
-cargo run -- --file-path "raw/news/Gmail - [AINews] not much happened today.html" --llm-url http://localhost:9090/prompt
+cargo run -- --file-path "raw/news/${TITLE}" --llm-url http://localhost:9090/prompt
 ```
 
 ### 3. Building for Production
@@ -65,5 +70,5 @@ cargo build --release
 The optimized executable will be located at `anypod/target/release/anypod`. You can then run it directly:
 
 ```bash
-./target/release/anypod --file-path "raw/news/Gmail - [AINews] not much happened today.html"
+./target/release/anypod --file-path "raw/news/${TITLE}"
 ```
