@@ -5,7 +5,7 @@
 
 ## Title
 ```bash
-export TITLE=2025-08-27
+export TITLE=2025-08-28
 ```
 
 ## Convert

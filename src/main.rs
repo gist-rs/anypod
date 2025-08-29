@@ -51,6 +51,20 @@ async fn main() -> Result<()> {
     println!("-> LLM selected format: {format_name}");
     println!("-> YouTube description generated.");
 
+    let source_filename = cli
+        .file_path
+        .file_stem()
+        .and_then(|s| s.to_str())
+        .unwrap_or("source");
+
+    // Prepend title to youtube description
+    let title = match format_name.as_str() {
+        "news_summary" => format!("Noob Vibe News {source_filename}\n\n"),
+        "paper_deep_dive" => format!("Noob Vibe Paper: {source_filename}\n\n"),
+        _ => String::new(),
+    };
+    youtube_desc.insert_str(0, &title);
+
     // 3. Load all necessary JSON components
     println!("-> Loading all prompt components...");
     let components = load_components(&format_name).await?;
@@ -68,11 +82,6 @@ async fn main() -> Result<()> {
 
     // 6. Generate descriptive filenames and save both files.
     let timestamp = Local::now().format("%Y-%m-%d");
-    let source_filename = cli
-        .file_path
-        .file_stem()
-        .and_then(|s| s.to_str())
-        .unwrap_or("source");
 
     let prompt_filename = format!("{timestamp}-{source_filename}-{format_name}-prompt.md");
     let desc_filename = format!("{timestamp}-{source_filename}-{format_name}-youtube-desc.txt");
