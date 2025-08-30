@@ -1,0 +1,13 @@
+Noob Vibe News 2025-08-30
+
+Apple is pushing the boundaries of on-device AI and agentic coding with exciting new releases!
+
+*   🚀 **Apple's FastVLM and MobileCLIP2** are now on Hugging Face, offering incredibly fast and efficient real-time visual language models that run entirely locally.
+*   🤖 **MLX upgrades and MXFP4 support** are revolutionizing how we handle large language models on Apple hardware, with ongoing developments in quantization formats.
+*   ✨ **Agentic coding stacks** are evolving rapidly, with xAI's grok-code-fast-1, OpenAI's Codex integration, and new CLI-native workflows making coding more intelligent and seamless.
+
+Dive into the future of AI with these groundbreaking advancements!
+
+---
+
+https://www.facebook.com/nooblearning

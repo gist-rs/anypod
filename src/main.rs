@@ -37,18 +37,22 @@ async fn main() -> Result<()> {
         .await
         .with_context(|| format!("Failed to read source file: {}", cli.file_path.display()))?;
 
-    // 2. Concurrently call LLM for format selection and YouTube description.
-    println!("\n-> Asking LLM to choose format and generate YouTube description...");
+    // 2. Determine format based on file path hint or LLM, then generate YouTube description
     let client = Client::new();
-    let (format_name_result, youtube_desc_result) = tokio::join!(
-        determine_format(&client, &cli.llm_url, &source_content),
-        generate_youtube_description(&client, &cli.llm_url, &source_content)
-    );
+    println!("\n-> Determining podcast format...");
+    let file_path_str = cli.file_path.to_string_lossy();
+    let format_name = if file_path_str.contains("news") {
+        "news_summary".to_string()
+    } else if file_path_str.contains("paper") {
+        "paper_deep_dive".to_string()
+    } else {
+        determine_format(&client, &cli.llm_url, &source_content).await?
+    };
+    println!("-> Selected format: {format_name}");
 
-    let format_name = format_name_result?;
-    let mut youtube_desc = youtube_desc_result?;
-
-    println!("-> LLM selected format: {format_name}");
+    println!("-> Generating YouTube description...");
+    let mut youtube_desc =
+        generate_youtube_description(&client, &cli.llm_url, &source_content).await?;
     println!("-> YouTube description generated.");
 
     let source_filename = cli
