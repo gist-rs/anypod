@@ -1,0 +1,15 @@
+Noob Vibe Paper: ColPali
+
+Unlock the future of document retrieval with an AI that truly *sees* your content!
+
+Here's what you'll discover:
+
+✨ Introducing ViDoRe: A new benchmark for evaluating how well AI understands visually rich documents.
+🚀 ColPali: A groundbreaking Vision Language Model that retrieves documents using page images, not just text.
+💡 Efficiency Boost: Experience faster, simpler, and more effective document retrieval with ColPali's multi-vector embeddings.
+
+Dive into the cutting edge of document intelligence with us!
+
+---
+
+https://www.facebook.com/nooblearning
