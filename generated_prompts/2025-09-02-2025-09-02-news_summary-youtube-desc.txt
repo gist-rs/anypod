@@ -1,0 +1,15 @@
+Noob Vibe News 2025-09-02
+
+🚀 Explore the cutting edge of AI development, from GPT-5's integration into Xcode to groundbreaking advancements in on-device VLMs!
+
+Here's what's buzzing in the AI world:
+
+✨ Major AI coding assistants like GPT-5 and Grok Code Fast are revolutionizing developer workflows with impressive speed and capabilities, though UX refinements are still underway.
+🤖 Discover Meituan's massive LongCat-Flash-Chat model and Apple's ultra-fast, on-device vision models for real-time local AI experiences.
+🌟 Get up to speed on the latest in agents, toolchains, and evaluation methods, including MCP UI and DSPy.
+
+Stay informed and inspired by these incredible AI innovations!
+
+---
+
+https://www.facebook.com/nooblearning
