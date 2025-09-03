@@ -5,7 +5,7 @@
 
 ## Title
 ```bash
-export TITLE=2407.01449v6-ColPali
+export TITLE=2025-09-03
 ```
 
 ## Convert

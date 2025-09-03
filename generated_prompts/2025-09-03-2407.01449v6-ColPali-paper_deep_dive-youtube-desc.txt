@@ -1,6 +1,12 @@
 Noob Vibe Paper: 2407.01449v6-ColPali
 
-Based on the provided content, what is the main contribution of the ColPali project and how does it improve document retrieval?
+Unlock the future of document retrieval with ColPali, a revolutionary Vision Language Model that harnesses the visual power of documents!
+
+* 🚀 **Revolutionize Retrieval:** Discover how ColPali overcomes the limitations of text-only systems by directly embedding document images.
+* ✨ **Introducing ViDoRe:** Explore our new benchmark for visually rich document retrieval, designed to push the boundaries of current systems.
+* 🤖 **Superior Performance:** See how ColPali achieves better, faster, and simpler document retrieval with its innovative multi-vector embeddings.
+
+We hope you found this overview insightful!
 
 ---
 
