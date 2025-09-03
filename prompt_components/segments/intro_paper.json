@@ -5,7 +5,7 @@
     "Male: 'และแอดต๊อบตัวปลอม'",
     "Female: 'เป็น ai ปลอมตัวมา' (giggling)",
     "Male: 'วันนี้มี paper มาเหลาให้ฟัง'",
-    "Female: 'อยากฟังๆ",
+    "Female: 'อยากฟังๆ'",
     "Male: 'ไปฟังกันเลยยยย'"
   ],
   "dynamic_element_prompt": "INSTRUCTION: Before the main topic, add a short, casual, one-sentence comment about a simple daily observation. Use the provided 'TODAY' date to make a plausible assumption about the current season or weather to add a human touch.",
