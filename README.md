@@ -2,10 +2,11 @@
 
 1. Paper to podcast. // weekly
 2. News to podcast. // daily
+3. Open source to podcast. // weekly
 
 ## Title
 ```bash
-export TITLE=2025-09-03
+export TITLE=2025-09-04-open-pipe
 ```
 
 ## Convert
@@ -40,6 +41,7 @@ cargo run -- --file-path path/to/your/source-file.html
 ```bash
 cargo run -- --file-path "raw/news/${TITLE}.md"
 cargo run -- --file-path "raw/papers/${TITLE}.md"
+cargo run -- --file-path "raw/open_sources/${TITLE}.md"
 ```
 
 The generated prompt will be saved in the `./generated_prompts` directory by default.

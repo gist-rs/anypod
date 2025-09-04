@@ -45,14 +45,26 @@ async fn main() -> Result<()> {
         "news_summary".to_string()
     } else if file_path_str.contains("paper") {
         "paper_deep_dive".to_string()
+    } else if file_path_str.contains("open_sources") {
+        "open_source_summary".to_string()
     } else {
         determine_format(&client, &cli.llm_url, &source_content).await?
     };
     println!("-> Selected format: {format_name}");
 
+    // 3. Load all necessary JSON components
+    println!("-> Loading all prompt components...");
+    let components = load_components(&format_name).await?;
+    println!("-> All components loaded successfully.");
+
     println!("-> Generating YouTube description...");
-    let mut youtube_desc =
-        generate_youtube_description(&client, &cli.llm_url, &source_content).await?;
+    let mut youtube_desc = generate_youtube_description(
+        &client,
+        &cli.llm_url,
+        &source_content,
+        &components.core.slogan,
+    )
+    .await?;
     println!("-> YouTube description generated.");
 
     let source_filename = cli
@@ -65,14 +77,10 @@ async fn main() -> Result<()> {
     let title = match format_name.as_str() {
         "news_summary" => format!("Noob Vibe News {source_filename}\n\n"),
         "paper_deep_dive" => format!("Noob Vibe Paper: {source_filename}\n\n"),
+        "open_source_summary" => format!("Noob Vibe Open Source: {source_filename}\n\n"),
         _ => String::new(),
     };
     youtube_desc.insert_str(0, &title);
-
-    // 3. Load all necessary JSON components
-    println!("-> Loading all prompt components...");
-    let components = load_components(&format_name).await?;
-    println!("-> All components loaded successfully.");
 
     // 4. Assemble the final prompt string.
     let final_prompt = assemble_prompt(&components);

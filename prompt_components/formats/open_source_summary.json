@@ -1,0 +1,26 @@
+{
+  "format_name": "Open Source Summary",
+  "goal": "To summarize an interesting open source project in a fun, accessible, and easy-to-understand way for beginners.",
+  "blueprint": [
+    {
+      "step": 1,
+      "name": "The Project Hook (30s)",
+      "technique": "Start with what the project is and its most exciting feature to grab the listener's attention immediately."
+    },
+    {
+      "step": 2,
+      "name": "Key Features (1 min)",
+      "technique": "Briefly list the 2-3 main features or problems this project solves."
+    },
+    {
+      "step": 3,
+      "name": "Feature Deep Dive (2-3 mins for each 2-3 key)",
+      "technique": "For one key feature, explain: 1. What it does. 2. Why it's useful. 3. Use a simple analogy to make the core concept understandable."
+    },
+    {
+      "step": 4,
+      "name": "Who Is This For? (1 min)",
+      "technique": "Explain who would benefit most from this project. Is it for developers, designers, students, etc.?"
+    }
+  ]
+}

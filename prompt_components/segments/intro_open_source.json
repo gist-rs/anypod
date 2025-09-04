@@ -1,0 +1,13 @@
+{
+  "base_script": [
+    "Both: '[DYNAMIC GREETING] welcome to Noob Learning ที่ๆ เราจะ vibe learning ไปด้วยกัน! เย้~'",
+    "แอดหญิง (female): 'พบกับแอดหญิงตัวปลอม'",
+    "แอดต๊อบ (male): 'และแอดต๊อบตัวปลอม'",
+    "แอดหญิง (female): 'คือเราเป็น ai น่ะ' (giggling)",
+    "แอดต๊อบ (male): 'วันนี้มี open source เด็ดๆ มาแนะนำกันอีกแล้ว'",
+    "แอดหญิง (female): 'อยากรู้เลย'",
+    "แอดต๊อบ (male): 'ไปดูกัน!'"
+  ],
+  "dynamic_element_prompt": "INSTRUCTION: For the '[DYNAMIC GREETING]' placeholder, generate a short, casual Thai greeting appropriate for the day of the week based on the provided 'TODAY' date, optionally with a short, related, fun comment (e.g., 'สวัสดีวันศุกร์จ้า อยากกลับบ้านแล้ว ฮ่าๆๆ').",
+  "topic_transition_line": "and here's the cool open source project we're looking at today..."
+}

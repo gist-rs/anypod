@@ -98,6 +98,7 @@ pub async fn load_components(format_name: &str) -> Result<PromptComponents> {
     let intro_filename = match format_name {
         "news_summary" => "segments/intro_news.json",
         "paper_deep_dive" => "segments/intro_paper.json",
+        "open_source_summary" => "segments/intro_open_source.json",
         _ => "segments/intro.json",
     };
     let intro_path = base_path.join(intro_filename);

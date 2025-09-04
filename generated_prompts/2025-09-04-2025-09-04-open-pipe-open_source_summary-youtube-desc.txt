@@ -1,0 +1,13 @@
+Noob Vibe Open Source: 2025-09-04-open-pipe
+
+This video dives into the exciting advancements in AI model training and reinforcement learning!
+
+* 🚀 OpenPipe is joining forces with CoreWeave to enhance AI tools and infrastructure, focusing on SFT workflows and building a unified platform for AI model training, evaluation, and observation.
+* ✨ Introducing RULER (Relative Universal LLM-Elicited Rewards), a novel reward function that simplifies Reinforcement Learning by using LLMs as judges to rank agent actions, leading to more stable and faster RL training.
+* 🤖 ART (Agent Reinforcement Trainer) is an open-source platform designed to help Large Language Models learn from experience, improving agent reliability.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning

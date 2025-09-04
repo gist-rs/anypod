@@ -18,7 +18,7 @@ pub struct LlmResponse {
 /// Calls the LLM to determine the podcast format.
 pub async fn determine_format(client: &Client, llm_url: &str, content: &str) -> Result<String> {
     let prompt = format!(
-        "Analyze the following content and determine the best podcast format from this list: 'news_summary', 'explainer', 'paper_deep_dive'. Respond with only the chosen format name and nothing else.\n\n---\n\n{}",
+        "Analyze the following content and determine the best podcast format from this list: 'news_summary', 'explainer', 'paper_deep_dive', 'open_source_summary'. Respond with only the chosen format name and nothing else.\n\n---\n\n{}",
         &content[..content.len().min(4000)]
     );
 
@@ -40,9 +40,11 @@ pub async fn generate_youtube_description(
     client: &Client,
     llm_url: &str,
     content: &str,
+    slogan: &str,
 ) -> Result<String> {
     let prompt = format!(
-        "Based on the following content, generate a concise and engaging YouTube video description. The description should:\n1. Start with a one-sentence hook that grabs attention.\n2. Summarize the key topics discussed in 2-3 bullet points, with each bullet point starting with a relevant emoji (e.g., 🚀, ✨, 🤖).\n3. Include a friendly closing sentence.\n4. Do NOT include hashtags or links.\n\n---\n\n{}",
+        "Based on the following content, generate a concise and engaging YouTube video description in English. The description should:\n1. Start with a one-sentence hook that grabs attention.\n2. Summarize the key topics discussed in 2-3 bullet points, with each bullet point starting with a relevant emoji (e.g., 🚀, ✨, 🤖).\n3. Use the following slogan as the friendly closing sentence: \"{}\"\n4. Do NOT include hashtags or links.\n\n---\n\n{}",
+        slogan,
         &content[..content.len().min(4000)]
     );
 
