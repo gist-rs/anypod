@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE=2025-09-04-open-pipe
+export TITLE=2025-09-06
 ```
 
 ## Convert
@@ -62,7 +62,38 @@ If your local LLM is running on a different address, use the `--llm-url` flag.
 cargo run -- --file-path "raw/news/${TITLE}" --llm-url http://localhost:9090/prompt
 ```
 
-### 3. Building for Production
+### 3. (Optional) YouTube Upload
+
+The tool can also upload a video file directly to YouTube and add it to a specified playlist.
+
+#### One-Time Setup
+
+Before you can upload, you need to authorize the application to access your YouTube account.
+
+1.  **Create a Google Cloud Project**: Go to the [Google Cloud Console](https://console.cloud.google.com/) and create a new project.
+2.  **Enable the API**: In your project, enable the "YouTube Data API v3".
+3.  **Create OAuth Credentials**:
+    -   Go to "Credentials" -> "Create Credentials" -> "OAuth client ID".
+    -   Select **"Desktop app"** as the application type.
+    -   Download the JSON file.
+4.  **Save Credentials**: Rename the downloaded file to `client_secrets.json` and place it in a configuration directory, for example: `~/.config/anypod/client_secrets.json`. The application will look for it there.
+
+The first time you run an upload command, your web browser will open, asking you to log in to your Google account and grant permission. After you approve, a `token.json` file will be saved in the same directory as your secrets file, allowing for automatic authentication in the future.
+
+#### Upload Command
+
+To upload a video, provide the path to the video file and the target playlist ID.
+
+```bash
+cargo run -- \
+  --file-path "raw/news/${TITLE}.md" \
+  --video-file "bin/${TITLE}.mp4" \
+  --playlist-id "YOUR_YOUTUBE_PLAYLIST_ID"
+```
+
+The application will first generate the description file locally and then proceed with the upload.
+
+### 4. Building for Production
 
 To build a release binary, run:
 
