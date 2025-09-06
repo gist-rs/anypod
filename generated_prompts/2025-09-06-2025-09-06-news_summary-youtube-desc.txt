@@ -1,0 +1,11 @@
+Noob Vibe News 2025-09-06
+
+China's coding landscape is evolving rapidly with Kimi K2-0905 and Qwen3-Max pushing the boundaries of long-context models and agentic capabilities.
+* 🚀 Kimi K2-0905 doubles context to 256k, enhancing coding and tool-calling for agents.
+* 🤖 Qwen3-Max emerges as a 1T-parameter frontier model, excelling in conversations and agentic tasks.
+* ✨ Explore advancements in evaluating agents and optimizing inference with novel decoding and post-training techniques.
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
