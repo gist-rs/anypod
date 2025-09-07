@@ -16,4 +16,24 @@ pub struct Cli {
     /// URL of the local LLM endpoint for format selection.
     #[arg(long, default_value = "http://localhost:9090/prompt")]
     pub llm_url: String,
+
+    /// (Optional) Path to the video file to upload to YouTube.
+    #[arg(long)]
+    pub video_file: Option<PathBuf>,
+
+    /// (Optional) YouTube playlist ID to add the video to.
+    #[arg(long)]
+    pub playlist_id: Option<String>,
+
+    /// (Optional) Path to the thumbnail file to upload to YouTube.
+    #[arg(long)]
+    pub thumbnail_file: Option<PathBuf>,
+
+    /// (Optional) Manually specify the YouTube video title.
+    #[arg(long)]
+    pub title: Option<String>,
+
+    /// (Optional) Manually specify the YouTube video description.
+    #[arg(long)]
+    pub description: Option<String>,
 }

@@ -2,6 +2,7 @@ mod cli;
 mod config;
 mod llm;
 mod prompt;
+mod youtube;
 
 use anyhow::{Context, Result};
 use chrono::Local;
@@ -13,6 +14,7 @@ use crate::cli::Cli;
 use crate::config::load_components;
 use crate::llm::{determine_format, generate_youtube_description};
 use crate::prompt::assemble_prompt;
+use crate::youtube::{add_video_to_playlist, authenticate, upload_thumbnail, upload_video};
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -57,47 +59,58 @@ async fn main() -> Result<()> {
     let components = load_components(&format_name).await?;
     println!("-> All components loaded successfully.");
 
-    println!("-> Generating YouTube description...");
-    let mut youtube_desc = generate_youtube_description(
-        &client,
-        &cli.llm_url,
-        &source_content,
-        &components.core.slogan,
-    )
-    .await?;
-    println!("-> YouTube description generated.");
-
     let source_filename = cli
         .file_path
         .file_stem()
         .and_then(|s| s.to_str())
         .unwrap_or("source");
 
-    // Prepend title to youtube description
-    let title = match format_name.as_str() {
-        "news_summary" => format!("Noob Vibe News {source_filename}\n\n"),
-        "paper_deep_dive" => format!("Noob Vibe Paper: {source_filename}\n\n"),
-        "open_source_summary" => format!("Noob Vibe Open Source: {source_filename}\n\n"),
-        _ => String::new(),
+    // 4. Determine Title: Use manual title if provided, otherwise generate it.
+    let title = if let Some(manual_title) = cli.title {
+        println!("-> Using manual title.");
+        manual_title
+    } else {
+        match format_name.as_str() {
+            "news_summary" => format!("Noob Vibe News {source_filename}"),
+            "paper_deep_dive" => format!("Noob Vibe Paper: {source_filename}"),
+            "open_source_summary" => format!("Noob Vibe Open Source: {source_filename}"),
+            _ => source_filename.to_string(),
+        }
     };
-    youtube_desc.insert_str(0, &title);
 
-    // 4. Assemble the final prompt string.
+    // 5. Determine Description: Use manual description if provided, otherwise generate it.
+    let base_description = if let Some(manual_desc) = cli.description {
+        println!("-> Using manual description.");
+        manual_desc
+    } else {
+        println!("-> Generating YouTube description...");
+        let desc = generate_youtube_description(
+            &client,
+            &cli.llm_url,
+            &source_content,
+            &components.core.slogan,
+        )
+        .await?;
+        println!("-> YouTube description generated.");
+        desc
+    };
+
+    // 6. Assemble the final prompt string.
     let final_prompt = assemble_prompt(&components);
     println!("-> Final prompt assembled successfully.");
 
-    // 5. Append social link to the description.
+    // 7. Prepare descriptions for file and upload.
+    let mut description_for_file = base_description.clone();
     if !components.core.social_links.facebook.is_empty() {
-        youtube_desc.push_str("\n\n---\n\n");
-        youtube_desc.push_str(&components.core.social_links.facebook);
+        description_for_file.push_str("\n\n---\n\n");
+        description_for_file.push_str(&components.core.social_links.facebook);
     }
+    let youtube_file_content = format!("{title}\n\n{description_for_file}");
 
-    // 6. Generate descriptive filenames and save both files.
+    // 8. Generate descriptive filenames and save both files.
     let timestamp = Local::now().format("%Y-%m-%d");
-
     let prompt_filename = format!("{timestamp}-{source_filename}-{format_name}-prompt.md");
     let desc_filename = format!("{timestamp}-{source_filename}-{format_name}-youtube-desc.txt");
-
     let prompt_path = cli.output_dir.join(&prompt_filename);
     let desc_path = cli.output_dir.join(&desc_filename);
 
@@ -105,7 +118,7 @@ async fn main() -> Result<()> {
         .await
         .with_context(|| format!("Failed to write final prompt to {}", prompt_path.display()))?;
 
-    fs::write(&desc_path, &youtube_desc)
+    fs::write(&desc_path, &youtube_file_content)
         .await
         .with_context(|| {
             format!(
@@ -119,6 +132,39 @@ async fn main() -> Result<()> {
         prompt_path.display(),
         desc_path.display()
     );
+
+    // --- (Optional) YouTube Upload ---
+    if let (Some(video_file), Some(playlist_id)) = (&cli.video_file, &cli.playlist_id) {
+        println!("\n-> Starting YouTube upload process...");
+
+        // 1. Authenticate
+        let hub = authenticate()
+            .await
+            .context("YouTube authentication failed")?;
+        println!("-> YouTube authentication successful.");
+
+        // 2. Upload Video
+        let video_id = upload_video(&hub, video_file, &title, &base_description)
+            .await
+            .context("YouTube video upload failed")?;
+
+        // 3. Add to Playlist
+        add_video_to_playlist(&hub, playlist_id, &video_id)
+            .await
+            .context("Failed to add video to YouTube playlist")?;
+        println!(
+            "-> Successfully added video to playlist: https://www.youtube.com/playlist?list={playlist_id}"
+        );
+
+        // 4. (Optional) Upload Thumbnail
+        if let Some(thumbnail_file) = &cli.thumbnail_file {
+            upload_thumbnail(&hub, &video_id, thumbnail_file)
+                .await
+                .context("Failed to upload YouTube thumbnail")?;
+        }
+
+        println!("✅ YouTube upload complete.");
+    }
 
     Ok(())
 }
