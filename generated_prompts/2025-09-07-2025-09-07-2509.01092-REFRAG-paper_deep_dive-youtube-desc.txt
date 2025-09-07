@@ -1,0 +1,15 @@
+Noob Vibe Paper: 2025-09-07-2509.01092-REFRAG
+
+Want to supercharge your LLM performance? Discover how REFRAG revolutionizes RAG by cutting down context length and boosting speed up to 30x!
+
+🚀 **How REFRAG works**: This innovative framework compresses unnecessary context chunks into smaller embeddings, making processing faster and more efficient.
+
+✨ **Key benefits**: It dramatically increases context window size up to 16x while maintaining accuracy, perfect for long conversations and document summarization.
+
+🤖 **Real-world impact**: By using reinforcement learning policies, REFRAG intelligently selects the most important tokens, significantly reducing latency and improving user experience.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
