@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE=2025-09-07-2509.01092-REFRAG
+export TITLE=2025-09-09
 ```
 
 ## Convert

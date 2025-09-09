@@ -24,7 +24,7 @@ pub async fn determine_format(client: &Client, llm_url: &str, content: &str) -> 
 
     let response: LlmResponse = client
         .post(llm_url)
-        .json(&json!({ "prompt": prompt }))
+        .json(&json!({ "prompt": prompt, "model": "gemini-2.5-pro" }))
         .send()
         .await
         .with_context(|| format!("Failed to send format selection request to LLM at {llm_url}"))?
@@ -50,7 +50,7 @@ pub async fn generate_youtube_description(
 
     let response: LlmResponse = client
         .post(llm_url)
-        .json(&json!({ "prompt": prompt }))
+        .json(&json!({ "prompt": prompt, "model": "gemini-2.5-pro" }))
         .send()
         .await
         .with_context(|| format!("Failed to send YouTube description request to LLM at {llm_url}"))?
