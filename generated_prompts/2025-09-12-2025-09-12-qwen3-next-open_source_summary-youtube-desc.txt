@@ -1,0 +1,12 @@
+Noob Vibe Open Source: 2025-09-12-qwen3-next
+
+What if an AI model could be both massively powerful and incredibly efficient?
+
+🚀 Discover the Qwen3-Next architecture, a game-changer that achieves extreme efficiency with a hybrid attention mechanism and an ultra-sparse MoE structure.
+✨ Explore its impressive performance, from handling massive 256K token contexts to outperforming top models in complex reasoning tasks.
+
+Noob Learning: Let's vibe learning together
+
+---
+
+https://www.facebook.com/nooblearning
