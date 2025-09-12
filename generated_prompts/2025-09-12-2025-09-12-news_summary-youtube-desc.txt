@@ -1,0 +1,13 @@
+Noob Vibe News 2025-09-12
+
+Dive into the latest AI breakthroughs, from Alibaba's hyper-efficient Qwen3-Next models to game-changing updates for developers and artists!
+
+*   🤖 Discover Alibaba's new Qwen3-Next, a hybrid model promising 10x faster inference and cheaper training.
+*   🎨 Explore cutting-edge image generation with ByteDance's Seedream 4.0 and powerful new OCR tools.
+*   💻 See how major upgrades to VS Code Copilot and Hugging Face are making top open-source models more accessible.
+
+Noob Learning: Let's vibe learning together
+
+---
+
+https://www.facebook.com/nooblearning

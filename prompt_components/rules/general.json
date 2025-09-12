@@ -2,5 +2,6 @@
   "language": "Main language is Thai. All key technical terms must be in English. Explain the English term in simple Thai only the first time it's used.",
   "acronyms": "Always state the full English term before using its acronym (e.g., 'Large Language Model' before 'LLM').",
   "tone": "Keep it fun and conversational, like a friend's chitchat. Use phrases like 'Imagine this...'.",
-  "style": "Use a casual style. Less 'ครับ' and 'ค่ะ'. Cats-related or real-life analogies are preferable."
+  "style": "Use a casual, friendly style. Absolutely no 'ครับ' or 'ค่ะ' endings to sentences. Cats-related or real-life analogies are preferable.",
+  "word_choice": "Avoid repeating the same technical term or phrase multiple times in a row. Vary word choice to keep the conversation engaging."
 }

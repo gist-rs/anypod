@@ -1,0 +1,13 @@
+Noob Vibe News 2025-09-11
+
+The world of AI is moving faster than ever, and we've got the latest breakthroughs you need to know about!
+
+*   🚀 Discover groundbreaking infrastructure for Reinforcement Learning, including Kimi's ultra-fast weight updates and RLFactory's plug-and-play framework for tool-using agents.
+*   ⚙️ Dive into the latest on scalable and deterministic AI, from defeating nondeterminism in LLM inference to new MoE training systems that boost performance.
+*   ✨ Get the scoop on powerful new model releases like the open-source K2-Think 32B, Baidu's ERNIE-4, and Meta's impressive MobileLLM-R1 for edge devices.
+
+Noob Learning: Let's vibe learning together
+
+---
+
+https://www.facebook.com/nooblearning

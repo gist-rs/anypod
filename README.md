@@ -6,12 +6,12 @@
 
 ## Title
 ```bash
-export TITLE=2025-09-09
+export TITLE=2025-09-12
 ```
 
 ## Convert
 ```bash
-ffmpeg -loop 1 -i assets/${TITLE}.png -i "bin/${TITLE}.m4a" -c:v libx264 -tune stillimage -c:a copy -pix_fmt yuv420p -shortest bin/${TITLE}.mp4
+ffmpeg -loop 1 -i assets/${TITLE}.png -i "bin/${TITLE}.audio.mp4" -c:v libx264 -tune stillimage -c:a copy -pix_fmt yuv420p -shortest bin/${TITLE}.mp4
 ```
 
 ---
