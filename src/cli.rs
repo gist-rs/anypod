@@ -14,7 +14,7 @@ pub struct Cli {
     pub output_dir: PathBuf,
 
     /// URL of the local LLM endpoint for format selection.
-    #[arg(long, default_value = "http://localhost:9090/prompt")]
+    #[arg(long, default_value = "http://localhost:1234/v1/chat/completions")]
     pub llm_url: String,
 
     /// (Optional) Path to the video file to upload to YouTube.
