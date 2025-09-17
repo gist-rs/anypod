@@ -1,0 +1,14 @@
+Noob Vibe News 2025-09-17
+
+🚀 **What happens when AI agents meet the future of coding?** Discover how GPT-5 Codex, smart IDEs, and next-gen inference infra are reshaping development — plus exciting breakthroughs in 3D worlds, robotics, and spatial intelligence.
+
+✨ **Key takeaways:**
+- 🤖 GPT-5 Codex shows incredible agentic power, but struggles with token bloat and control issues; developers are building full React apps and animated videos, yet face long loops and latency trade-offs.
+- 💻 IDEs are getting smarter: VS Code, Cursor, GitHub Copilot, and Perplexity bring better context windows, MCP integration, and task-specific model selection to boost productivity.
+- 🚀 Backend infrastructure is evolving fast: vLLM on ARM, ROCm upgrades, Context Parallelism in TRL, and Mac MLX speed-ups are redefining how we train and deploy models at scale.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
