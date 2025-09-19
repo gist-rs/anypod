@@ -1,0 +1,13 @@
+Noob Vibe News 2025-09-19
+
+Meta’s neural band demo crashed live—here's what really happened and why it matters for the future of AR.  
+
+🚀 **Live demo failures & real-world tech pressure**: A 1-minute stall during Meta’s Ray-Ban Display launch sparked intense discussions on the challenges of shipping complex hardware in real-time, with insights from industry insiders and developers.  
+✨ **New engine & capture tech**: Meta is shifting to its own Horizon Engine for AI-driven rendering, while Quest-native Gaussian Splatting tools like Hyperscape Capture make 3D scanning easier than ever.  
+🤖 **Breakthrough models & open video editing**: From Mistral’s Magistral 1.2 to Luma's Ray3 reasoning video model and DecartAI’s Lucy Edit, the latest AI advancements are pushing creative and technical boundaries.  
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning

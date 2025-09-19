@@ -28,13 +28,12 @@ pub async fn determine_format(client: &Client, llm_url: &str, content: &str) -> 
     let response: LlmResponse = client
         .post(llm_url)
         .json(&json!({
-            "model": "qwen3-coder-30b-a3b-instruct-mlx",
+            // "model": "qwen3-coder-30b-a3b-instruct-mlx",
             "messages": [
                 { "role": "system", "content": system_prompt },
                 { "role": "user", "content": user_prompt }
             ],
             "temperature": 0.2,
-            "max_tokens": 20,
             "stream": false
         }))
         .send()
@@ -68,7 +67,7 @@ pub async fn generate_youtube_description(
     let response: LlmResponse = client
         .post(llm_url)
         .json(&json!({
-            "model": "qwen3-coder-30b-a3b-instruct-mlx",
+            // "model": "qwen3-coder-30b-a3b-instruct-mlx",
             "messages": [
                 { "role": "system", "content": system_prompt },
                 { "role": "user", "content": user_prompt }
