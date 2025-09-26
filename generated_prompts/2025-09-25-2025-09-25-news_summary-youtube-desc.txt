@@ -1,0 +1,13 @@
+Noob Vibe News 2025-09-25
+
+🚀 Alibaba just dropped a massive wave of AI updates with Qwen3-Max, Qwen3-VL, and a $52B roadmap — and the ecosystem is already buzzing!  
+
+✨ **Qwen3-VL** brings 256K context, OCR in 32 languages, and GUI coding — all open-sourced and shipping fast.  
+🤖 **Qwen3-Coder-Plus** is getting smarter with API tweaks and strong performance in coding benchmarks like WebDev Arena.  
+⚡ **GPT-5 Codex**, Meta’s new CWM 32B, and platform upgrades like vLLM DCP are pushing the limits of multimodal AI and infrastructure.  
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
