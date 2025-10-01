@@ -39,6 +39,11 @@ async fn main() -> Result<()> {
         .await
         .with_context(|| format!("Failed to read source file: {}", cli.file_path.display()))?;
 
+    println!("\n-> source_content:{source_content}");
+    if source_content.is_empty() {
+        panic!("Expect no empty file")
+    };
+
     // 2. Determine format based on file path hint or LLM, then generate YouTube description
     let client = Client::new();
     println!("\n-> Determining podcast format...");

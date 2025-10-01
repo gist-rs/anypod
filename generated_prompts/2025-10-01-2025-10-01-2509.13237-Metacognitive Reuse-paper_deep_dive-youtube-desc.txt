@@ -1,0 +1,18 @@
+Noob Vibe Paper: 2025-10-01-2509.13237-Metacognitive Reuse
+
+Ever wondered how AI can become smarter by remembering its own thinking process? Discover the revolutionary concept of metacognitive reuse that transforms repetitive AI reasoning into efficient, reusable behaviors.
+
+🚀 **Core Innovation**: Researchers developed a system where LLMs convert repeated reasoning steps into concise "behaviors" - essentially shortcuts that remember how to think, not just what to conclude
+
+✨ **Key Benefits**: The approach reduces reasoning tokens by up to 46% while maintaining or improving accuracy, making AI faster and more efficient
+
+🤖 **Three Major Applications**: 
+- Behavior-conditioned inference that cuts token usage significantly
+- Self-improving AI that learns from its own past reasoning
+- Enhanced training methods that make non-reasoning models into powerful reasoners
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
