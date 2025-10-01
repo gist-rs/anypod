@@ -6,7 +6,7 @@
     "แอดหญิง: 'เป็น ai ปลอมตัวมา' (giggling)",
     "แอดต๊อบ: 'วันนี้มี paper มาเหลาให้ฟัง'",
     "แอดหญิง: 'อยากฟังๆ'",
-    "แอดต๊อบ: 'ไปฟังกันเลยยยย'"
+    "แอดต๊อบ: 'ไปฟังกันเลย'"
   ],
   "dynamic_element_prompt": "INSTRUCTION: Before the main topic, add a short, casual, one-sentence comment about a simple daily observation. Use the provided 'TODAY' date to make a plausible assumption about the current season or weather to add a human touch.",
   "topic_transition_line": "Today, we're looking at an exciting paper that recently caught our attention."
