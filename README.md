@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-10-01-2509.13237-Metacognitive Reuse"
+export TITLE="2025-10-03"
 ```
 
 ## Convert
