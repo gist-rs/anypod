@@ -1,0 +1,18 @@
+Noob Vibe Paper: 2025-10-05-2509.21743-RETRIEVAL-OF-THOUGHT
+
+Noob Vibe Paper: RETRIEVAL-OF-THOUGHT
+
+Ever wondered how AI can think faster while thinking smarter? Discover the revolutionary Retrieval-of-Thought approach that's changing how large reasoning models work!
+
+🚀 **What makes RoT special**: This innovative method reuses previous thinking steps as "thought" components, creating a dynamic thought graph that can be quickly accessed and recombined for new problems.
+
+✨ **How it works**: Instead of starting from scratch, RoT retrieves relevant thinking nodes and uses reward-guided traversal to build custom problem templates - dramatically cutting down on redundant reasoning.
+
+🤖 **Real-world impact**: Tests show RoT reduces output tokens by up to 40%, cuts inference latency by 82%, and lowers costs by 59% while keeping accuracy intact.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2509.21743
