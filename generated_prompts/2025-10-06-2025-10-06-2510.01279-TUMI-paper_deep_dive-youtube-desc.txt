@@ -1,0 +1,16 @@
+Noob Vibe Paper: 2025-10-06-2510.01279-TUMI
+
+Ever wondered how AI can think smarter by working together? Discover the revolutionary TUMIX framework that transforms how language models tackle complex problems!
+
+• 🤝 TUMIX introduces a multi-agent system where multiple AI workers collaborate simultaneously, each using different tool strategies to solve the same problem and learn from each other's approaches
+
+• 🚀 This innovative framework achieves up to 3.55% better accuracy on major reasoning benchmarks while maintaining the same inference cost, making it a game-changer for AI performance
+
+• 🤖 The system intelligently adapts by using LLMs to automatically optimize agent designs, and can even stop early when confidence is high, cutting inference costs by half without sacrificing performance
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://arxiv.org/pdf/2509.21743
+https://www.facebook.com/nooblearning
