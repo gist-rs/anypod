@@ -1,0 +1,16 @@
+Noob Vibe Paper: THINK RIGHT: LEARNING TO MITIGATE UNDER-OVER
+
+Want to see how AI learns to think just right—no more overcomplicating, no more missing the mark?
+
+🚀 Smart Reasoning Balance: Discover how TRAAC helps AI models avoid both rushed and overly complex thinking by dynamically adjusting their reasoning steps based on task difficulty.
+
+✨ Intelligent Compression: Learn how the model identifies and removes unnecessary reasoning steps using self-attention mechanisms, making thinking more efficient without sacrificing accuracy.
+
+🤖 Adaptive Learning in Action: See how TRAAC trains models to estimate problem difficulty and allocate compute resources wisely, leading to better performance across math and non-math tasks.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2510.01581
