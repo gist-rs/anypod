@@ -1,0 +1,16 @@
+Noob Vibe Paper: Tiny Recursion Model
+
+Ever wondered if smaller AI models could outperform giant language models? Discover how tiny networks are revolutionizing problem-solving!
+
+• 🚀 **Breakthrough Performance**: TRM achieves remarkable 45% accuracy on ARC-AGI1 with just 7 million parameters, outperforming massive LLMs while using less than 0.01% of their size
+
+• ✨ **Simple Yet Powerful**: Unlike complex hierarchical models, TRM uses a straightforward 2-layer network that's easier to understand and implement while delivering superior generalization
+
+• 🤖 **Future of Efficient AI**: This research shows that recursive reasoning with minimal networks can solve complex puzzles like Sudoku and mazes better than traditional large models, opening new possibilities for efficient AI
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2510.04871v1
