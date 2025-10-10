@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-10-07-2510.01581-THINK RIGHT"
+export TITLE="2025-10-10"
 ```
 
 ## Convert
