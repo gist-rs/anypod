@@ -1,0 +1,22 @@
+Noob Vibe Paper: 2025-10-26-DeepSeek-OCR-Contexts Optical Compression
+
+Ever wonder how AI can compress massive documents into tiny data while keeping accuracy? DeepSeek-OCR shows us the future of long-context processing!
+
+🚀 **Key Features:**  
+- Introduces a novel optical 2D mapping technique to compress long text into manageable vision tokens  
+- Achieves up to 97% OCR accuracy with a compression ratio of 10×, and still maintains 60% at 20×  
+- Outperforms state-of-the-art models like GOT-OCR2.0 and MinerU2.0 using significantly fewer vision tokens  
+
+✨ **Real-world Impact:**  
+- Can process over 200,000 pages daily in production using a single A100-40G GPU  
+- Demonstrates strong performance on OmniDocBench and Fox benchmarks  
+
+🤖 **Tech Deep Dive:**  
+- Powered by DeepEncoder and DeepSeek3B-MoE-A570M decoder for efficient compression and decoding  
+- Supports multiple resolutions and is built for high-performance document understanding  
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning

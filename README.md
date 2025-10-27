@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-10-11-2510.04618-Agentic Context Engineering"
+export TITLE="2025-10-26-DeepSeek-OCR-Contexts Optical Compression"
 ```
 
 ## Convert
