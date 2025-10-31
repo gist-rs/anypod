@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-10-26-DeepSeek-OCR-Contexts Optical Compression"
+export TITLE="2025-10-29"
 ```
 
 ## Convert
