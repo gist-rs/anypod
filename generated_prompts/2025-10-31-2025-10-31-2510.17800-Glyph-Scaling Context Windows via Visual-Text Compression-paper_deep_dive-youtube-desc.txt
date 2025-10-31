@@ -1,0 +1,13 @@
+Noob Vibe Paper: Glyph-Scaling Context Windows via Visual-Text Compression
+
+🚀 What if you could process million-token documents with the speed of a regular language model? Glyph revolutionizes long-context AI by turning text into images!
+
+✨ This video breaks down how Glyph uses visual-text compression to scale context windows dramatically, achieving up to 4x token reduction without sacrificing accuracy.  
+✨ We explore the genetic search algorithm that finds optimal image rendering for better performance, and how this enables faster decoding and training.  
+✨ You'll also see real-world applications like document understanding and how this breakthrough could reshape multimodal AI.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
