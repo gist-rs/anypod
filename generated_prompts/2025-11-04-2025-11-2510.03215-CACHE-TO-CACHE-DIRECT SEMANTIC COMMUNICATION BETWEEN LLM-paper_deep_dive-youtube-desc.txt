@@ -1,0 +1,14 @@
+Noob Vibe Paper: 2025-11-2510.03215-CACHE-TO-CACHE-DIRECT SEMANTIC COMMUNICATION BETWEEN LLM
+
+Did you know Large Language Models can now communicate directly through their internal memory instead of text? This revolutionary approach is about to change how AI systems work together.
+
+🚀 Discover how Cache-to-Cache (C2C) enables LLMs to share semantic information directly through their internal representations
+✨ Learn how this new paradigm achieves 8.5-10.5% higher accuracy while cutting latency in half compared to traditional text-based communication
+🤖 Explore the neural network architecture that makes cross-model semantic transfer possible without losing rich contextual information
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2510.03215

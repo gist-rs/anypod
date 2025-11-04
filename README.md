@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-10-31-2510.17800-Glyph-Scaling Context Windows via Visual-Text Compression"
+export TITLE="2025-11-2510.03215-CACHE-TO-CACHE-DIRECT SEMANTIC COMMUNICATION BETWEEN LLM"
 ```
 
 ## Convert
