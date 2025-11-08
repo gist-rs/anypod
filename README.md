@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-2510.03215-CACHE-TO-CACHE-DIRECT SEMANTIC COMMUNICATION BETWEEN LLM"
+export TITLE="2025-11-06-2510.26493-Context Engineering 2.0-The Context of Context Engineering"
 ```
 
 ## Convert
