@@ -1,0 +1,14 @@
+Noob Vibe Paper: 2025-11-12-2501.04227-Agent Laboratory-Using LLM Agents as Research Assistants
+
+🚀 What if AI could completely automate scientific research? Meet Agent Laboratory, the revolutionary LLM-based system that's changing how we do science forever!
+
+✨ This groundbreaking framework takes your research ideas and handles everything from literature review to code writing, creating complete research outputs with 84% less cost than traditional methods
+✨ Researchers can guide the process at every stage, and early tests show AI-generated machine learning code matches state-of-the-art performance while dramatically reducing research time
+✨ Discover how this autonomous system is freeing scientists from tedious tasks so they can focus on what matters most: creative innovation and breakthrough discoveries
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2501.04227

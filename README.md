@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-06-2510.26493-Context Engineering 2.0-The Context of Context Engineering"
+export TITLE="2025-11-12-2501.04227-Agent Laboratory-Using LLM Agents as Research Assistants"
 ```
 
 ## Convert
