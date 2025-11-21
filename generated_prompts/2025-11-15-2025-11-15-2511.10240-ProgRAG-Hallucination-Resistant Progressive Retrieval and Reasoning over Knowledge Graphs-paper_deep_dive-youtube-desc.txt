@@ -1,0 +1,14 @@
+Noob Vibe Paper: 2025-11-15-2511.10240-ProgRAG-Hallucination-Resistant Progressive Retrieval and Reasoning over Knowledge Graphs
+
+**Unlock the future of AI reasoning with ProgRAG — a breakthrough in knowledge graph question answering!**
+
+- 🚀 Discover how ProgRAG revolutionizes multi-hop reasoning by breaking down complex questions into manageable sub-questions for better accuracy.
+- ✨ See how this innovative framework reduces hallucinations and improves reliability through smart evidence retrieval and uncertainty-aware pruning.
+- 🤖 Learn how ProgRAG optimizes context dynamically, making it a game-changer for large language models working with knowledge graphs.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2511.10240
