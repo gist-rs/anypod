@@ -1,0 +1,14 @@
+Noob Vibe Paper: 2025-11-21-Prototype to Production
+
+🚀 Ready to take your AI agent from prototype to production? Discover the hidden challenges and essential strategies that separate a demo from a reliable, enterprise-grade system.
+
+✨ Learn how to build trust in your AI agents through robust CI/CD pipelines, automated evaluation, and comprehensive observability — the key to safe and scalable deployments.
+
+🤖 Explore the unique operational hurdles of agent-based systems: dynamic tool orchestration, scalable state management, and unpredictable costs — and how to master them.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://www.kaggle.com/whitepaper-prototype-to-production

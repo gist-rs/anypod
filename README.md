@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-15-2511.10240-ProgRAG-Hallucination-Resistant Progressive Retrieval and Reasoning over Knowledge Graphs"
+export TITLE="2025-11-21-Prototype to Production"
 ```
 
 ## Convert
