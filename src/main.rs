@@ -8,6 +8,7 @@ use anyhow::{Context, Result};
 use chrono::Local;
 use clap::Parser;
 use reqwest::Client;
+use std::path::Path;
 use tokio::fs;
 
 use crate::cli::Cli;
@@ -16,22 +17,48 @@ use crate::llm::{determine_format, generate_youtube_description};
 use crate::prompt::assemble_prompt;
 use crate::youtube::{add_video_to_playlist, authenticate, upload_thumbnail, upload_video};
 
+// Determines the appropriate subdirectory based on the input file path
+fn determine_output_subdirectory(file_path: &Path) -> Result<&'static str> {
+    let path_str = file_path.to_string_lossy();
+
+    if path_str.contains("/news/") {
+        Ok("news")
+    } else if path_str.contains("/papers/") {
+        Ok("papers")
+    } else if path_str.contains("/courses/") {
+        Ok("courses")
+    } else if path_str.contains("/open_sources/") {
+        Ok("open_sources")
+    } else {
+        Ok("") // Default to root output directory
+    }
+}
+
 #[tokio::main]
 async fn main() -> Result<()> {
     let cli = Cli::parse();
 
     println!("Initializing prompt generation...");
     println!("-> Source File: {}", cli.file_path.display());
-    println!("-> Output Dir:  {}", cli.output_dir.display());
+
+    // Determine the subdirectory based on input file type
+    let subdirectory = determine_output_subdirectory(&cli.file_path)?;
+    let output_path = if subdirectory.is_empty() {
+        cli.output_dir.clone()
+    } else {
+        cli.output_dir.join(subdirectory)
+    };
+
+    println!("-> Output Dir:  {}", output_path.display());
     println!("-> LLM URL:     {}", cli.llm_url);
 
     // --- Execution Flow ---
 
     // 1. Create output directory and read source file
-    fs::create_dir_all(&cli.output_dir).await.with_context(|| {
+    fs::create_dir_all(&output_path).await.with_context(|| {
         format!(
             "Failed to create output directory: {}",
-            cli.output_dir.display()
+            output_path.display()
         )
     })?;
 
@@ -116,8 +143,8 @@ async fn main() -> Result<()> {
     let timestamp = Local::now().format("%Y-%m-%d");
     let prompt_filename = format!("{timestamp}-{source_filename}-{format_name}-prompt.md");
     let desc_filename = format!("{timestamp}-{source_filename}-{format_name}-youtube-desc.txt");
-    let prompt_path = cli.output_dir.join(&prompt_filename);
-    let desc_path = cli.output_dir.join(&desc_filename);
+    let prompt_path = output_path.join(&prompt_filename);
+    let desc_path = output_path.join(&desc_filename);
 
     fs::write(&prompt_path, &final_prompt)
         .await

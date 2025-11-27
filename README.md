@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-24-2412.17780-PepTune-De Novo Generation of Therapeutic Peptides with Multi-Objective-Guided Discrete Diffusion"
+export TITLE="2025-11-Continuous batching"
 ```
 
 ## Convert
@@ -40,6 +40,7 @@ cargo run -- --file-path path/to/your/source-file.html
 **Example:**
 ```bash
 cargo run -- --file-path "raw/news/${TITLE}.md"
+cargo run -- --file-path "raw/courses/${TITLE}.md"
 cargo run -- --file-path "raw/papers/${TITLE}.md"
 cargo run -- --file-path "raw/open_sources/${TITLE}.md"
 ```
