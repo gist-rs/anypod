@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-21-Prototype to Production"
+export TITLE="2025-11-24-2412.17780-PepTune-De Novo Generation of Therapeutic Peptides with Multi-Objective-Guided Discrete Diffusion"
 ```
 
 ## Convert

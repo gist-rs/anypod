@@ -1,0 +1,14 @@
+Noob Vibe Paper: 2025-11-24-2412.17780-PepTune-De Novo Generation of Therapeutic Peptides with Multi-Objective-Guided Discrete Diffusion
+
+Ready to revolutionize drug discovery? Meet PepTune, the AI-powered system that creates life-saving peptides in seconds!
+
+🚀 Generates valid therapeutic peptides with cutting-edge masked discrete language modeling
+✨ Uses innovative Monte Carlo Tree Guidance to optimize multiple properties simultaneously like binding affinity, permeability, and solubility
+🤖 Combines diffusion models with advanced search algorithms to tackle complex molecular design challenges
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2412.17780
