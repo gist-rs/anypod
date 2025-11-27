@@ -1,0 +1,31 @@
+{
+  "format_name": "Learning Together",
+  "goal": "To collaboratively explore and understand complex topics from various sources (papers, blogs, courses, etc.) through shared discovery and discussion, making concepts accessible through conversation and curiosity.",
+  "blueprint": [
+    {
+      "step": 1,
+      "name": "Setting Our Journey (1-2 mins)",
+      "technique": "Begin with a conversational invitation. Ask: 'What caught your attention about this topic?' Share initial curiosity and establish what we hope to discover together. Frame this as a joint exploration rather than a lecture."
+    },
+    {
+      "step": 2,
+      "name": "Uncovering the Core Idea (3-5 mins)",
+      "technique": "Present the main concept as a puzzle to solve together. Ask questions like: 'How would you approach this?' or 'What does this remind you of?' Use interactive analogies and pause for reflection. Repeat key concepts in different ways, checking understanding with 'Does that resonate with you?'"
+    },
+    {
+      "step": 3,
+      "name": "Exploring Together (5-7 mins), depends on content long but must more than 2-3 mins for each sections",
+      "technique": "Break down the material as a shared investigation. Say 'Let's walk through this together' and pause at decision points or key insights. Ask: 'What do you think might happen here?' or 'Why do you think they chose this approach?' Simplify technical elements through dialogue rather than explanation."
+    },
+    {
+      "step": 4,
+      "name": "Connecting Our Worlds (2-3 mins)",
+      "technique": "Shift to 'What might this mean for us?' Explore possibilities together. Ask: 'Where do you see this showing up in our world?' or 'What excites you most about these findings?' Encourage personal connections and future applications. End with an open question to continue the conversation."
+    },
+    {
+      "step": 5,
+      "name": "Next Steps Together (1 min)",
+      "technique": "Conclude by suggesting ways to continue learning together. Ask: 'What would you like to explore next?' or 'How might we apply what we've discovered?' Provide resources for further exploration and invite ongoing discussion."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "format_name": "AI Paper Deep Dive",
-  "goal": "To break down a complex AI research paper and make its key findings accessible to a non-expert audience.",
+  "format_name": "Paper Deep Dive",
+  "goal": "To break down a complex AI,Tech research paper and make its key findings accessible to a non-expert audience.",
   "blueprint": [
     {
       "step": 1,

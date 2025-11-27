@@ -22,7 +22,7 @@ pub struct LlmResponse {
 
 /// Calls the LLM to determine the podcast format.
 pub async fn determine_format(client: &Client, llm_url: &str, content: &str) -> Result<String> {
-    let system_prompt = "Analyze the following content and determine the best podcast format from this list: 'news_summary', 'explainer', 'paper_deep_dive', 'open_source_summary'. Respond with only the chosen format name and nothing else.";
+    let system_prompt = "Analyze the following content and determine the best podcast format from this list: 'news_summary', 'explainer', 'paper_deep_dive', 'open_source_summary', 'learn'. Respond with only the chosen format name and nothing else.";
     let user_prompt = &content[..content.len().min(4000)];
 
     let response: LlmResponse = client

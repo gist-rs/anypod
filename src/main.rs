@@ -27,6 +27,8 @@ fn determine_output_subdirectory(file_path: &Path) -> Result<&'static str> {
         Ok("papers")
     } else if path_str.contains("/courses/") {
         Ok("courses")
+    } else if path_str.contains("/learn/") {
+        Ok("learn")
     } else if path_str.contains("/open_sources/") {
         Ok("open_sources")
     } else {
@@ -79,6 +81,8 @@ async fn main() -> Result<()> {
         "news_summary".to_string()
     } else if file_path_str.contains("paper") {
         "paper_deep_dive".to_string()
+    } else if file_path_str.contains("learn") {
+        "learn".to_string()
     } else if file_path_str.contains("open_sources") {
         "open_source_summary".to_string()
     } else {
@@ -105,6 +109,7 @@ async fn main() -> Result<()> {
         match format_name.as_str() {
             "news_summary" => format!("Noob Vibe News {source_filename}"),
             "paper_deep_dive" => format!("Noob Vibe Paper: {source_filename}"),
+            "learn" => format!("Noob Vibe Learning: {source_filename}"),
             "open_source_summary" => format!("Noob Vibe Open Source: {source_filename}"),
             _ => source_filename.to_string(),
         }
@@ -143,6 +148,7 @@ async fn main() -> Result<()> {
     let timestamp = Local::now().format("%Y-%m-%d");
     let prompt_filename = format!("{timestamp}-{source_filename}-{format_name}-prompt.md");
     let desc_filename = format!("{timestamp}-{source_filename}-{format_name}-youtube-desc.txt");
+
     let prompt_path = output_path.join(&prompt_filename);
     let desc_path = output_path.join(&desc_filename);
 

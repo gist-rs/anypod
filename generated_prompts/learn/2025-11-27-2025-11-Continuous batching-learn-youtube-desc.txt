@@ -1,0 +1,13 @@
+Noob Vibe Learning: 2025-11-Continuous batching
+
+Want to know why your AI chatbot takes time to respond and how engineers make it faster? Dive into the fascinating world of continuous batching!
+
+🚀 Learn how attention mechanisms and KV caching form the foundation of modern LLM inference
+✨ Discover the magic behind continuous batching - maximizing throughput by processing multiple conversations simultaneously  
+🤖 Understand why this technique is crucial for handling high-load scenarios in real-world AI applications
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
