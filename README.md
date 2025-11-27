@@ -40,7 +40,7 @@ cargo run -- --file-path path/to/your/source-file.html
 **Example:**
 ```bash
 cargo run -- --file-path "raw/news/${TITLE}.md"
-cargo run -- --file-path "raw/courses/${TITLE}.md"
+cargo run -- --file-path "raw/learn/${TITLE}.md"
 cargo run -- --file-path "raw/papers/${TITLE}.md"
 cargo run -- --file-path "raw/open_sources/${TITLE}.md"
 ```
