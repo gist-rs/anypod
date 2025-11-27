@@ -14,7 +14,7 @@
     },
     {
       "step": 3,
-      "name": "The Deep Dive Story (at least 3 Minutes)",
+      "name": "The Deep Dive Story (depends on content long but must more than 2-3 mins for each sections)",
       "technique": "Storytelling (Problem -> Action -> Result). Explain the challenge before the tech, how the AI works using the analogy, and the positive result."
     },
     {

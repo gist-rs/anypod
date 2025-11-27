@@ -14,7 +14,7 @@
     },
     {
       "step": 3,
-      "name": "Feature Deep Dive (2-3 mins for each 2-3 key)",
+      "name": "Feature Deep Dive (depends on content long but must more than 2-3 mins for each sections)",
       "technique": "For one key feature, explain: 1. What it does. 2. Why it's useful. 3. Use a simple analogy to make the core concept understandable."
     },
     {
