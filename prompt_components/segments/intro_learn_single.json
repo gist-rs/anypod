@@ -1,0 +1,7 @@
+{
+  "base_script": [
+    "สวัสดีทุกคน พบกันเช่นเคย ที่ๆ เราจะ vibe learning ไปด้วยกัน! เย้~ วันนี้มีอะไรดีๆ มาเรียนรู้ไปด้วยกัน ไปกันฟังเล้ย'"
+  ],
+  "dynamic_element_prompt": "INSTRUCTION: Before the main topic, add a short, casual, one-sentence comment about a simple daily observation. Use the provided 'TODAY' date to make a plausible assumption about the current season or weather to add a human touch.",
+  "topic_transition_line": "Today, we're exploring something interesting together that we can't wait to share with you!"
+}
