@@ -1,0 +1,13 @@
+Noob Vibe Paper: 2025-11-30-2511.08923-TiDAR-Think in Diffusion-Talk in Autoregression
+
+Get ready to revolutionize language modeling! 🚀
+
+• 🤖 TiDAR combines the speed of diffusion models with the quality of autoregressive models in one groundbreaking hybrid architecture
+• ✨ The system thinks in diffusion and talks in autoregression, achieving up to 5.91x faster generation while matching AR model quality
+• 🚀 This innovative approach delivers 4.71x to 5.91x more tokens per second while maintaining low overhead for real-world deployment
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning

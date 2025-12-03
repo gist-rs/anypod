@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-Continuous batching"
+export TITLE="2025-11-30-2511.08923-TiDAR-Think in Diffusion-Talk in Autoregression"
 ```
 
 ## Convert
