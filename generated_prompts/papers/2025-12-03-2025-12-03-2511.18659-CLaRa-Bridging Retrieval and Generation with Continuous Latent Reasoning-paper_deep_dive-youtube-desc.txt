@@ -1,0 +1,14 @@
+Noob Vibe Paper: CLaRa-Bridging Retrieval and Generation with Continuous Latent Reasoning
+
+Got a powerful new approach to boost AI's knowledge accuracy? CLaRa is here to revolutionize how we think about retrieval and generation in language models.
+
+🚀 **What’s new**: Introducing CLaRa (Continuous Latent Reasoning), a unified framework that combines retrieval and generation in one seamless process using shared continuous representations.
+✨ **How it works**: The system uses a smart compression technique called SCP to create compact, semantically rich document vectors—making both retrieval and generation more efficient.
+🤖 **Why it matters**: By enabling end-to-end training with joint optimization, CLaRa fixes major issues like context overflow and inefficient text handling, delivering state-of-the-art results on QA benchmarks.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2511.18659

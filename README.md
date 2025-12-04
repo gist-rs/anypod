@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-30-2511.08923-TiDAR-Think in Diffusion-Talk in Autoregression"
+export TITLE="2025-12-03-2511.18659-CLaRa-Bridging Retrieval and Generation with Continuous Latent Reasoning"
 ```
 
 ## Convert
