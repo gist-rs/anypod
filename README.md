@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-12-03-2511.18659-CLaRa-Bridging Retrieval and Generation with Continuous Latent Reasoning"
+export TITLE="2025-11-04-2511.20639-Latent Collaboration in Multi-Agent Systems"
 ```
 
 ## Convert

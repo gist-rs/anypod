@@ -1,0 +1,14 @@
+Noob Vibe Paper: Latent Collaboration in Multi-Agent Systems
+
+🚀 What happens when AI models collaborate *directly in their hidden brain states*—without any text? Dive into the future of multi-agent AI with LatentMAS!
+
+✨ Discover how this groundbreaking framework enables large language models to reason and communicate purely in latent space, achieving up to 14.6% higher accuracy and 4x faster inference.
+
+🤖 Learn how LatentMAS eliminates the need for training, uses shared latent working memory for seamless collaboration, and outperforms traditional text-based systems across math, science, coding, and more.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2511.20639
