@@ -3,8 +3,8 @@
     "Both: 'สวัสดีทุกคน welcome to Noob Learning ที่ๆ เราจะ vibe learning ไปด้วยกัน! เย้~'",
     "แอดหญิง: 'พบกับแอดหญิง ai'",
     "แอดต๊อบ: 'และแอดต๊อบ ai'",
-    "แอดหญิง: 'เราเป็น ai ปลอมตัวมา ฮ่าๆ' (giggling)",
-    "แอดต๊อบ: 'vibe เอาหมดละมะสมัยนี้ ฮิๆ' (giggling)",
+    "แอดหญิง: 'เราเป็น ai ปลอมตัวมา' (giggling)",
+    "แอดต๊อบ: 'vibe เอาหมดละมะสมัยนี้' (giggling)",
     "แอดหญิง: 'ตัวจริงตกงานแปบบบ ฮือ' (funny, not so sad)"
   ],
   "dynamic_element_prompt": "INSTRUCTION: Before the main topic, add a short, casual, one-sentence comment about a simple daily observation like the weather (e.g., 'today is so hot', 'the rain is nice') to add a human touch.",

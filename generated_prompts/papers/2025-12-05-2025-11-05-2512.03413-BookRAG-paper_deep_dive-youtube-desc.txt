@@ -1,0 +1,15 @@
+Noob Vibe Paper: BookRAG: A Hierarchical Structure-aware Index-based Approach for RAG
+
+🚀 **Want to supercharge AI question answering on complex, structured documents?** Discover how BookRAG revolutionizes Retrieval-Augmented Generation by leveraging hierarchical document structures!
+
+✨ **Key Highlights:**
+- 📚 Introduces BookRAG, a new RAG approach designed specifically for structured documents like books and handbooks
+- 🧠 Features BookIndex, a novel indexing method that uses hierarchical trees and entity graphs to improve retrieval accuracy
+- 🎯 Demonstrates state-of-the-art performance in both retrieval recall and QA accuracy on real-world benchmarks
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2512.03413

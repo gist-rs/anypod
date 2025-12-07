@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-04-2511.20639-Latent Collaboration in Multi-Agent Systems"
+export TITLE="2025-11-05-2512.03413-BookRAG"
 ```
 
 ## Convert
