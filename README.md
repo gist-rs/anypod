@@ -6,7 +6,8 @@
 
 ## Title
 ```bash
-export TITLE="2025-11-05-2512.03413-BookRAG"
+export TITLE="2025-12-15-2512.07829-One-Layer Adaptation for Visual Generation (FAE)"
+echo "" > ${TITLE}.md
 ```
 
 ## Convert

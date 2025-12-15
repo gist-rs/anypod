@@ -1,0 +1,16 @@
+Noob Vibe Paper: LUXICAL HIGH-SPEED LEXICAL-DENSE TEXT EMBEDDINGS
+
+Want to speed up large-scale text processing without sacrificing quality? Discover how Luxical brings the best of fast lexical models and powerful transformers together.
+
+🚀 **High-Speed Processing**: Luxical delivers fast text embeddings by combining sparse TF-IDF features with a lightweight ReLU network, achieving up to 100x speedups over traditional neural models.
+
+✨ **Flexible Embeddings**: Unlike classic classifiers, Luxical produces dense vector representations that support diverse tasks like clustering, retrieval, and classification—ideal for web-scale data curation.
+
+🤖 **Efficient Training**: Using knowledge distillation, Luxical approximates large transformer models while maintaining high quality, making it a practical solution for AI research and production workloads.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2512.09015
