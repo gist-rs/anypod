@@ -1,0 +1,14 @@
+Noob Vibe Paper: One Layer Is Enough-Adapting Pretrained Visual Encoders for Image Generation
+
+Want to know how to supercharge image generation with pretrained visual models? This breakthrough could change everything.
+
+🚀 **FAE (Feature Auto-Encoder)** simplifies the process of adapting pre-trained visual encoders for generative models using just one attention layer.
+✨ **High performance with low complexity**: Achieves state-of-the-art results in image generation while maintaining fast training times.
+🤖 **Versatile framework**: Works seamlessly with diffusion models and normalizing flows, supporting various self-supervised encoders like DINO and SigLIP.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2512.07829
