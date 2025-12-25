@@ -6,7 +6,7 @@
 
 ## Title
 ```bash
-export TITLE="2025-12-15-2512.07829-One Layer Is Enough-Adapting Pretrained Visual Encoders for Image Generation"
+export TITLE="2025-12-2025 LLM Year in Review"
 echo "" > ${TITLE}.md
 ```
 
