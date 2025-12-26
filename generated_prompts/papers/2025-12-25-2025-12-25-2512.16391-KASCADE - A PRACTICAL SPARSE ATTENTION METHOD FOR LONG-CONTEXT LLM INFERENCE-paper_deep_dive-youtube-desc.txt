@@ -1,0 +1,15 @@
+Noob Vibe Paper: KASCADE - A PRACTICAL SPARSE ATTENTION METHOD FOR LONG-CONTEXT LLM INFERENCE
+
+Ever wondered how AI models can process incredibly long texts without slowing down? KASCADE shows us a breakthrough method for efficient long-context AI inference!
+
+🚀 **Key Topics:**
+• 🚀 Discover KASCADE, a smart sparse attention technique that dramatically speeds up long-context AI processing by reusing key attention patterns across layers
+• ✨ Learn how this method achieves up to 4.1x faster decode performance and 2.2x faster prefill performance while maintaining accuracy on complex benchmarks
+• 🤖 Understand the innovative approach of selecting anchor layers algorithmically to maximize cross-layer similarity and enable easy deployment across different models
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2512.16391
