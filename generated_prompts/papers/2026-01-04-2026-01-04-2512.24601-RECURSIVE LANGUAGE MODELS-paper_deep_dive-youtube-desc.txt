@@ -1,0 +1,16 @@
+Noob Vibe Paper: 2026-01-04-2512.24601-RECURSIVE LANGUAGE MODELS
+
+🚀 How can we break the limits of language model context windows? Discover a groundbreaking new approach that lets AI process prompts up to 1 million tokens long!
+
+✨ This video explores Recursive Language Models (RLMs), a powerful inference strategy that allows large language models to handle extremely long inputs by recursively breaking them down and processing them as part of an external environment.
+
+✨ We compare RLMs against state-of-the-art models like GPT-5 and show how they maintain high performance on complex long-context tasks—way beyond normal model limits—while using similar or lower computational costs.
+
+✨ Learn how this innovative method could revolutionize AI for long-horizon tasks, from complex reasoning to processing massive datasets, all without requiring changes to model architecture or training.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2512.24601

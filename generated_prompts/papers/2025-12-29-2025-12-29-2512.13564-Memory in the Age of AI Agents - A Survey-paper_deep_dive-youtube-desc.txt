@@ -1,0 +1,15 @@
+Noob Vibe Paper: 2025-12-29-2512.13564-Memory in the Age of AI Agents - A Survey
+
+🧠 What if your AI could remember, learn, and adapt like a human? Discover how memory is revolutionizing the future of intelligent agents.
+
+🚀 **Exploring the Core of AI Intelligence**: Learn how memory enables long-term reasoning, continual learning, and interaction with complex environments in modern AI agents.
+
+✨ **Breaking Down Memory Types**: Dive into the three main forms of agent memory—token-level, parametric, and latent—and how they shape intelligent behavior.
+
+🤖 **Beyond Traditional Models**: Understand the evolving dynamics of memory, from formation to retrieval, and how it's being integrated with reinforcement learning and multimodal systems.
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
