@@ -1,0 +1,14 @@
+Noob Vibe Paper: 2026-03-13-2601.01885-Agentic Memory
+
+Ever wondered how AI agents can remember and learn like humans? Discover the future of AI memory management!
+
+• 🚀 Introduces AgeMem, a revolutionary unified framework that seamlessly blends long-term and short-term memory for LLM agents
+• ✨ Features intelligent tool-based memory operations that let AI autonomously decide what, when, and how to manage information
+• 🤖 Shows breakthrough performance on complex long-horizon tasks through advanced reinforcement learning training strategies
+
+Noob Learning: Let's vibe learning together!
+
+---
+
+https://www.facebook.com/nooblearning
+https://arxiv.org/pdf/2601.01885

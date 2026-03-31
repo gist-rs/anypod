@@ -6,8 +6,7 @@
 
 ## Title
 ```bash
-# export TITLE="2026-01-04-1807.03819-UNIVERSAL TRANSFORMERS"
-export TITLE="2026-01-04-2512.24601-RECURSIVE LANGUAGE MODELS"
+export TITLE="2026-03-13-2601.01885-Agentic Memory"
 echo "" > ${TITLE}.md
 ```
 
